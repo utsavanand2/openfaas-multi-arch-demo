@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas.kumarutsavanand.com
+functions:
+  birthday-func:
+    lang: dockerfile
+    handler: ./birthday-func
+    image: ghcr.io/utsavanand2/birthday-func:latest
